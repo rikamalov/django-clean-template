@@ -24,7 +24,7 @@ sudo sed -i "s~dbms_template_user~$user_linux~g" gunicorn_config.py
 sudo sed -i "s~dbms_template_workers~$project_workers~g" gunicorn_config.py
 
 sudo sed -i "s~dbms_template_path~$project_path~g" bin/start_gunicorn.sh
-chmod +x bin/start_gunicorn.sh
+sudo chmod +x bin/start_gunicorn.sh
 sudo sed -i "s~dbms_template_path~$project_path~g" djangowebsite.conf
 sudo sed -i "s~dbms_template_user~$user_linux~g" djangowebsite.conf
 
