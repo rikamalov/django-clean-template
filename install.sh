@@ -5,7 +5,7 @@ project_ip=""
 project_workers=""
 project_path=`pwd`
 user_linux=`echo $USER`
-echo Ваш текущий путь к Python
+echo Ваш текущий путь к Python:
 which python3
 
 read -p "Укажите путь к Python: " base_python_interpreter
