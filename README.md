@@ -33,3 +33,6 @@ mv django-clean-template <new-dir-name>
 ALLOWED_HOSTS = []
 ```
 ### 6. Заливаем свой проект по sftp не перезатирая файл `wsgi` и не меняя название папки `config` 
+
+
+## Графическая схема шагов установки, что и упакованно в install.sh 
