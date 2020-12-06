@@ -1,14 +1,19 @@
 server {
-	listen 80 default_server;
-	listen [::]:80 default_server;
 
-	root /var/www/html;
+        server_name YOUR_ADRESS;
 
-	index index.html index.htm index.nginx-debian.html;
+        location /.well-known {
+        root /var/www/html;
+        }
 
-	server_name _;
+        location = /favicon.ico {
+            alias YOUR_DIR/static/favicon.ico;
+        }
+        location /static/ {
+            root YOUR_DIR/djangowebsite;
+        }
 
-	location / { 
+        location / {
             proxy_pass http://127.0.0.1:8001;
             proxy_set_header X-Forwarded-Host $server_name;
             proxy_set_header X-Real-IP $remote_addr;
