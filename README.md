@@ -36,3 +36,6 @@ ALLOWED_HOSTS = []
 
 
 ## Графическая схема шагов установки, что и упакованно в install.sh 
+
+
+<img src="https://getwebcode.ru/static/roadmapserverstartapp.png">
