@@ -6,7 +6,7 @@
 sudo apt-get update
 ```
 ```
-sudo apt-get install -y  htop git curl nano nginx  supervisor
+sudo apt-get install -y  htop git curl nano nginx  supervisor requests
 ```
 ```
 sudo apt-get install -y python3-pip python3-dev python3-venv
