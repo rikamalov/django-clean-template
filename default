@@ -1,13 +1,13 @@
 server {
 
-        server_name dbms_template_web_adress;
+        server_name dbms_template_web_address;
 
         location /.well-known {
         root /var/www/html;
         }
 
         location = /favicon.ico {
-            alias dbms_template_path/static/favicon.ico;
+            alias dbms_template_path/djangowebsite/static/favicon.ico;
         }
         location /static/ {
             root dbms_template_path/djangowebsite;
