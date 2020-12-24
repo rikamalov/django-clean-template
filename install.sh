@@ -23,7 +23,7 @@ sudo sed -i "s~dbms_template_user~$user_linux~g" gunicorn_config.py
 sudo sed -i "s~dbms_template_workers~$project_workers~g" gunicorn_config.py
 
 sudo sed -i "s~dbms_template_path~$project_path~g" default
-sudo sed -i "s~dbms_template_web_adress~$project_domain~g" default
+sudo sed -i "s~dbms_template_web_address~$project_domain~g" default
 
 sudo sed -i "s~dbms_template_path~$project_path~g" bin/start_gunicorn.sh
 sudo chmod +x bin/start_gunicorn.sh
