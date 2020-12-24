@@ -1,19 +1,19 @@
 server {
 
-        server_name YOUR_ADRESS;
+        server_name dbms_template_web_adress;
 
         location /.well-known {
         root /var/www/html;
         }
 
         location = /favicon.ico {
-            alias YOUR_DIR/static/favicon.ico;
+            alias dbms_template_path/static/favicon.ico;
         }
         location /static/ {
-            root YOUR_DIR/djangowebsite;
+            root dbms_template_path/djangowebsite;
         }
         location /media/ {
-            root YOUR_DIR/djangowebsite;
+            root dbms_template_path/djangowebsite;
         }
         location / {
             proxy_pass http://127.0.0.1:8001;
