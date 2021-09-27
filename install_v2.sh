@@ -52,3 +52,4 @@ sudo cp -f supervisor_$project_name.conf /etc/supervisor/conf.d
 sudo service nginx restart
 sudo service supervisor start
 sudo service supervisor restart
+sudo rm -r .git/
