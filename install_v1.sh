@@ -35,3 +35,4 @@ sudo cp -f gunicorn_config.py $project_path/djangowebsite
 sudo cp -f djangowebsite.conf /etc/supervisor/conf.d
 sudo service nginx restart
 sudo service supervisor start
+sudo rm -r .git/
